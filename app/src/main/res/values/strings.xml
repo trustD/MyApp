@@ -21,17 +21,19 @@
         <item>电影</item>
         <item>汽车</item>
         <item>笑话</item>
-        <item>游戏</item>
-        <item>时尚</item>
-        <item>情感</item>
-        <item>精选</item>
-        <item>电台</item>
-        <item>nba</item>
-        <item>数码</item>
-        <item>彩票</item>
-        <item>手机</item>
         <item>博客</item>
-        <item>暴雪游戏</item>
-        <item>CBA</item>
+        <!--<item>游戏</item>-->
+        <!--<item>手机</item>-->
+        <!--<item>时尚</item>-->
+        <!--<item>情感</item>-->
+        <!--<item>精选</item>-->
+        <!--<item>电台</item>-->
+        <!--<item>nba</item>-->
+        <!--<item>数码</item>-->
+        <!--<item>彩票</item>-->
+        <!---->
+        <!---->
+        <!--<item>暴雪游戏</item>-->
+        <!--<item>CBA</item>-->
     </array>
 </resources>

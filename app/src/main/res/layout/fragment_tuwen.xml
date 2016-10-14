@@ -1,18 +1,32 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              xmlns:app="http://schemas.android.com/apk/res-auto"
-              tools:context="baoqi.com.myapp.fragment.Tuwen">
-    <com.aspsine.irecyclerview.IRecyclerView
-        android:id="@+id/tuWenRecycler"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/one_date"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="Dec.2015"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.wuxiaolong.pullloadmorerecyclerview.PullLoadMoreRecyclerView
+
+        android:id="@+id/tuwenRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:refreshEnabled="true"
-        app:loadMoreEnabled="true"
-        app:refreshHeaderLayout="@layout/irecyclerview_refresh_header"
-        app:loadMoreFooterLayout="@layout/irecycler_load_more_footer"/>
-
-
-
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
 </LinearLayout>
+
+

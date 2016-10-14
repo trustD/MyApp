@@ -28,6 +28,10 @@
         </activity>
         <activity android:name=".Activity.NewsDeatils">
         </activity>
+        <activity android:name=".Activity.Tianqi">
+        </activity>
+        <activity android:name=".Activity.QingSongyike">
+        </activity>
     </application>
 
 </manifest>

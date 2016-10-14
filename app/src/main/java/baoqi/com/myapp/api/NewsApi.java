@@ -30,57 +30,58 @@ import rx.Observable;
 
 public interface NewsApi {
 
-    @GET("/nc/article/list/{type}/{id}-20.html")
-    Observable<NewsList> getNews(@Path("type")String type,@Path("id")int id);
+
+    @GET("/nc/article/headline/T1348647853363/{id}-20.html")
+    Observable<NewsList> getTopNews(@Path("id")int id);
 
 
 
 
 
 
-
-
-
-    @GET("/nc/article/list/T1348647853363/{id}-20.html")
-    Observable<NewsList> getTopNews(int id);
 
     @GET("/nc/article/list/T1399700447917/{id}-20.html")
-    Observable<FootnewsList> getFootNews(int id);
+    Observable<FootnewsList> getFootNews(@Path("id")int id);
 
     @GET("/nc/article/list/T1348648141035/{id}-20.html")
-    Observable<JunShiList> getJunShi(int id);
+    Observable<JunShiList> getJunShi(@Path("id")int id);
     @GET("/nc/article/list/T1348648517839/{id}-20.html")
-    Observable<YuleList> getYule(int id);
+    Observable<YuleList> getYule(@Path("id")int id);
+    @GET("/nc/article/list/T1348648756099/{id}-20.html")
+    Observable<CaiJing> getCaiJing(@Path("id")int id);
+
     @GET("/nc/article/list/T1348649580692/{id}-20.html")
-    Observable<CaiJing> getCaiJing(int id);
+    Observable<KeJiList> getKeji(@Path("id")int id);
+
     @GET("/nc/article/list/T1348648650048/{id}-20.html")
-    Observable<KeJiList> getKeji(int id);
+    Observable<DianyingList> getDianYing(@Path("id")int id);
+
     @GET("/nc/article/list/T1348654060988/{id}-20.html")
-    Observable<DianyingList> getDianYing(int id);
+    Observable<QiCheList> getQiChe(@Path("id")int id);
+
     @GET("/nc/article/list/T1350383429665/{id}-20.html")
-    Observable<QiCheList> getQiChe(int id);
+    Observable<XiaoHuaList> getXiaoHua(@Path("id")int id);
+
     @GET("/nc/article/list/T1348654151579/{id}-20.html")
-    Observable<XiaoHuaList> getXiaoHua(int id);
-    @GET("/nc/article/list/T1348650593803/{id}-20.html")
-    Observable<YouXiList> getYouXi(int id);
+    Observable<YouXiList> getYouXi(@Path("id")int id);
     @GET("/nc/article/list/T1348650839000/{id}-20.html")
-    Observable<ShiShangList> getShiShang(int id);
+    Observable<ShiShangList> getShiShang(@Path("id")int id);
     @GET("/nc/article/list/T1370583240249/{id}-20.html")
-    Observable<QingGan> getQingGan(int id);
+    Observable<QingGan> getQingGan(@Path("id")int id);
     @GET("/nc/article/list/T1348648517839/{id}-20.html")
-    Observable<DianTai> getDianTai(int id);
+    Observable<DianTai> getDianTai(@Path("id")int id);
     @GET("/nc/article/list/T1348649145984/{id}-20.html")
-    Observable<NBAList> getNBA(int id);
+    Observable<NBAList> getNBA(@Path("id")int id);
     @GET("/nc/article/list/T1356600029035/{id}-20.html")
-    Observable<CaiPiaoList> getCaiPiao(int id);
+    Observable<CaiPiaoList> getCaiPiao(@Path("id")int id);
     @GET("/nc/article/list/T1348649654285/{id}-20.html")
-    Observable<ShouJi> getShouJi(int id);
+    Observable<ShouJi> getShouJi(@Path("id")int id);
     @GET("/nc/article/list/T1349837698345/{id}-20.html")
-    Observable<BokeList> getBoKe(int id);
+    Observable<BokeList> getBoKe(@Path("id")int id);
     @GET("/nc/article/list/T1349837698345/{id}-20.html")
-    Observable<BaoXueList> getBaoXue(int id);
+    Observable<BaoXueList> getBaoXue(@Path("id")int id);
     @GET("/nc/article/list/T1348649475931/{id}-20.html")
-    Observable<CBAList> getCBA(int id);
+    Observable<CBAList> getCBA(@Path("id")int id);
 
 
 

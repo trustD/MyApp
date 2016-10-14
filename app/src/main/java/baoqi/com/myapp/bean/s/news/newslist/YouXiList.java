@@ -15,7 +15,7 @@ public class YouXiList {
         mList = list;
     }
 
-    @SerializedName("T1348650593803")
+    @SerializedName("T1348654151579")
     ArrayList<News> mList;
     public ArrayList<News> getList() {
         return mList;

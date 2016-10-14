@@ -12,7 +12,7 @@ import baoqi.com.myapp.bean.s.news.News;
 
 public class DianyingList {
 
-    @SerializedName("T1348654060988")
+    @SerializedName("T1348648650048")
     ArrayList<News> mList;
     public ArrayList<News> getList() {
         return mList;

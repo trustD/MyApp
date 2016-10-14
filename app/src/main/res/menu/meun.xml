@@ -4,21 +4,21 @@
       xmlns:android.support.design="http://schemas.android.com/tools">
     <group android:id="@+id/g1">
         <item
-            android:id="@+id/zhihuitem"
+            android:id="@+id/tianqiItem"
             android:checkable="true"
             android:icon="@mipmap/ic_launcher"
             android:title="今日天气"
             android.support.design:itemTextColor="@color/nev_item"
             app:itemIconTint="@color/nev_item"/>
         <item
-            android:id="@+id/topnewsitem"
+            android:id="@+id/qingsongyike"
             android:checkable="true"
             android:icon="@drawable/wangyi"
             android:title="来个笑话"
             android.support.design:itemTextColor="@color/nev_item"
             app:itemIconTint="@color/nev_item"/>
         <item
-            android:id="@+id/meiziitem"
+            android:id="@+id/yejianmoshi"
             android:checkable="true"
             android:icon="@drawable/look2"
             android:title="夜间模式"

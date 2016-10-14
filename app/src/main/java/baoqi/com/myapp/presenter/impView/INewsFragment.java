@@ -11,7 +11,7 @@ import baoqi.com.myapp.bean.s.news.NewsList;
  * Created by hasee on 2016/10/12.
  */
 
-public interface INewsFragment extends IBaseFragment{
+public interface INewsFragment {
     void updateNews(NewsList list);
 
 

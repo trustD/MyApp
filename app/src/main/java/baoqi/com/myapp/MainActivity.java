@@ -1,23 +1,27 @@
 package baoqi.com.myapp;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
+import android.view.MenuItem;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import baoqi.com.myapp.fragment.Meizi;
 import baoqi.com.myapp.fragment.NewsFragment;
+import baoqi.com.myapp.fragment.QingSongFragment;
+import baoqi.com.myapp.fragment.TianqiFragment;
 import baoqi.com.myapp.fragment.Tuwen;
 import baoqi.com.myapp.fragment.ZhihuFragment;
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import de.greenrobot.event.EventBus;
-import de.greenrobot.event.Subscribe;
-import de.greenrobot.event.ThreadMode;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,17 +33,46 @@ public class MainActivity extends AppCompatActivity {
     RadioButton mFoot4;
     @BindView(R.id.main_foot)
     RadioGroup mMainFoot;
+    @BindView(R.id.nav_view)
+    NavigationView mNavView;
+    @BindView(R.id.activity_main)
+    DrawerLayout mdrawLayout;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
         initView();
-
-
+        initNavView();
     }
+
+
+
+    private void initNavView() {
+        mNavView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                item.setChecked(true);
+                switch (item.getItemId()) {
+                    case R.id.tianqiItem:
+                        mfagment = new TianqiFragment();
+                        break;
+                    case R.id.qingsongyike:
+                        mfagment = new QingSongFragment();
+                        break;
+                    case R.id.yejianmoshi:
+
+                        break;
+                }
+                loadFragment(mfagment);
+                mdrawLayout.closeDrawers();
+                return true;
+            }
+        });
+    }
+
 
     private void initView() {
         RadioGroup footer = (RadioGroup) findViewById(R.id.main_foot);

@@ -11,7 +11,7 @@ import baoqi.com.myapp.bean.s.news.News;
  */
 
 public class CaiJing {
-    @SerializedName("T1348649580692")
+    @SerializedName("T1348648756099")
     ArrayList<News> list;
 
     public ArrayList<News> getList() {

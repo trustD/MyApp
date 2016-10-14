@@ -48,7 +48,9 @@ public class ApiManage {
     }
 
     public NewsApi mNewsApi;
+    Object APIlock = new Object();
     public NewsApi getNewsService(){
+
         mNewsApi = new Retrofit.Builder()
                 .baseUrl("http://c.m.163.com")
                 //增加返回值为Observable<T>的支持
@@ -57,6 +59,8 @@ public class ApiManage {
                 //增加返回值为Gson的支持(以实体类返回)
                 .addConverterFactory(GsonConverterFactory.create())
                 .build().create(NewsApi.class);
+
+
         return mNewsApi;
     }
 
