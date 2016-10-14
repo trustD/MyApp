@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_zhihu_deatils"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baoqi.com.myapp.Activity.ZhihuDeatils">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <android.support.v7.widget.Toolbar
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:elevation="1dp"
+            android:background="@color/colorPrimary"
+            app:title="@string/app_name"/>
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/zhihui_web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

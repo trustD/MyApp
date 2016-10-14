@@ -1,0 +1,18 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              tools:context="baoqi.com.myapp.fragment.Tuwen">
+    <com.aspsine.irecyclerview.IRecyclerView
+        android:id="@+id/tuWenRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:refreshEnabled="true"
+        app:loadMoreEnabled="true"
+        app:refreshHeaderLayout="@layout/irecyclerview_refresh_header"
+        app:loadMoreFooterLayout="@layout/irecycler_load_more_footer"/>
+
+
+
+</LinearLayout>

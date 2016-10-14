@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/side_image"
+              android:layout_width="match_parent"
+              android:layout_height="220dp"
+              android:fitsSystemWindows="true"
+
+              android:gravity="center_horizontal"
+              android:background="@drawable/nav_icon"
+              android:orientation="vertical">
+
+    <ImageView
+        android:src="@drawable/user_head"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView"/>
+</LinearLayout>

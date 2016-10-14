@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_meizi_photo_describe"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="baoqi.com.myapp.Activity.MeiziPhotoDescribeActivity">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:id="@+id/shot"/>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?android:actionBarSize"
+        android:elevation="1dp"
+        android:background="#3b000000"
+        android:title="瞧一瞧"
+       style="@android:style/ThemeOverlay.Material.Dark"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/share"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:src="@mipmap/ic_share_white_24dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
+
+            <ImageView
+                android:src="@mipmap/ic_save_white_24dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/share"
+                android:layout_toLeftOf="@+id/share"
+                android:id="@+id/download"/>
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+</RelativeLayout>

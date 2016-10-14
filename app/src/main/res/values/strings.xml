@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">消遣一下</string>
+
+    <string name="fragment_zhihu">知乎精选</string>
+    <string name="fragemnt_toutiao">头条新闻</string>
+    <string name="fragment_meizhi">妹纸</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="all_isone">图文精选</string>
+    <string name="snack_infor">网络出错</string>
+    <string name="image_success">图片保存成功</string>
+
+    <array name="news">
+        <item>头条</item>
+        <item>足球</item>
+        <item>军事</item>
+        <item>娱乐</item>
+        <item>财经</item>
+        <item>科技</item>
+        <item>电影</item>
+        <item>汽车</item>
+        <item>笑话</item>
+        <item>游戏</item>
+        <item>时尚</item>
+        <item>情感</item>
+        <item>精选</item>
+        <item>电台</item>
+        <item>nba</item>
+        <item>数码</item>
+        <item>彩票</item>
+        <item>手机</item>
+        <item>博客</item>
+        <item>暴雪游戏</item>
+        <item>CBA</item>
+    </array>
+</resources>
